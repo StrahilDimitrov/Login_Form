@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login / Register</title>
+    <link rel="icon" type="image/x-icon" href="../image/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/login_register.css" />
+</head>
+
+<body>
+    <div class="form">
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="button-log" onclick="login()">Log In</button>
+                <button type="button" class="button-log" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="../image/facebook.png">
+                <img src="../image/google.png">
+                <img src="../image/instagram.png">
+            </div>
+            <form id="login" class="username-password">
+                <input type="text" class="user-pass" placeholder="Username" required />
+                <input type="password" class="user-pass" placeholder="Password" required />
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit">Log In</button>
+            </form>
+            <form id="register" class="username-password">
+                <input type="text" class="user-pass" placeholder="Username" required />
+                <input type="email" class="user-pass" placeholder="Email" required />
+                <input type="password" class="user-pass" placeholder="Password" required />
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/login_register.js"></script>
+
+</body>
+
+</html>
